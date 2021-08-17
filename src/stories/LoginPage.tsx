@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
@@ -89,7 +89,7 @@ export default function SignIn() {
     setShowPassword(!showPassword);
   };
 
-  const handleMouseDownPassword = (event) => {
+  const handleMouseDownPassword = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
   };
 
@@ -102,7 +102,7 @@ export default function SignIn() {
             <div className={classes.paperWrapper}>
               <Typography component="h1" variant="h5">
                 Log In
-          </Typography>
+              </Typography>
               <form className={classes.form} noValidate>
                 <Grid container>
                   <Grid item xs={12} className={classes.emailContainer}>
@@ -149,12 +149,12 @@ export default function SignIn() {
                   className={classes.submit}
                 >
                   Log In
-            </Button>
+                </Button>
                 <Grid container justifyContent='flex-end' className={classes.forgotPassword}>
                   <Grid item>
                     <span>
                       Forgot Password?
-                </span>
+                    </span>
                   </Grid>
                 </Grid>
               </form>
@@ -168,7 +168,7 @@ export default function SignIn() {
                 className={classes.submit}
               >
                 Sign Up
-            </Button>
+              </Button>
             </div>
           </Paper>
         </Container>

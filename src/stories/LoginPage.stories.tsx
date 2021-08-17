@@ -8,7 +8,7 @@ export default {
   component: LoginPage,
 } as ComponentMeta<typeof LoginPage>;
 
-const Template: ComponentStory<typeof LoginPage> = (args) => <LoginPage {...args} />;
+const Template: ComponentStory<typeof LoginPage> = () => <LoginPage />;
 
 export const SignIn = Template.bind({});
 
